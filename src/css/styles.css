@@ -1,12 +1,5 @@
 body {
- /* background-color: #121214;
-  background-image: var(--bg);
-  background-position:  center;
-  background-repeat: no-repeat;
-  background-size: cover;*/
-  background: #121214 var(--bg) 
-  top center/cover no-repeat ;
- 
+  background: #121214 var(--bg) top center/cover no-repeat;
 }
 
 body * {
@@ -28,20 +21,19 @@ header {
   --card-tittle-border-color: #746615;
   --card-primary-color: #f7dd43;
   --bg: url(../assets/bg-yellow.svg);
-
 }
 
-body.blue{
+body.blue {
   --card-bg: #202024;
-  --card-tittle-border-color: #338AF3;
-  --card-primary-color: #338AF3;
+  --card-tittle-border-color: #338af3;
+  --card-primary-color: #338af3;
   --bg: url(../assets/bg-blue.svg);
 }
 
-body.green{
-  --card-bg: #1A1F1B;
-  --card-tittle-border-color: #047C3F;
-  --card-primary-color: #047C3F;
+body.green {
+  --card-bg: #1a1f1b;
+  --card-tittle-border-color: #047c3f;
+  --card-primary-color: #047c3f;
   --bg: url(../assets/bg-green.svg);
 }
 
@@ -58,7 +50,6 @@ body.green{
   background: var(--card-bg);
   border-bottom: 2px solid var(--card-primary-color);
   border-radius: 6px;
-
 }
 
 .card h2 {
@@ -105,7 +96,7 @@ body.green{
   line-height: 125%;
   color: #e1e1e6;
 }
-.card h2:hover ,
+.card h2:hover,
 .card ul li img:hover,
 .card ul li strong:hover {
   transform: scale(1.1);
@@ -119,16 +110,16 @@ body.green{
 
 .card {
   opacity: 0;
-  animation: appear .6s forwards;
+  animation: appear 0.6s forwards;
 }
 
-@keyframes appear{
-  0%{
+@keyframes appear {
+  0% {
     transform: translatey(-50px);
     opacity: 0;
   }
 
-  100%{
+  100% {
     opacity: 1;
   }
 }
